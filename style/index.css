@@ -1,0 +1,88 @@
+/* English font - regular */
+@font-face {
+    font-family: 'ENG_regular';
+    unicode-range: U+0000-007F;
+    src: url('/fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ENG_lighter';
+    unicode-range: U+0000-007F;
+    src: url('/fonts/NotoSans-Light.ttf');
+}
+
+/* English font - bold */
+@font-face {
+    font-family: 'ENG_bold';
+    unicode-range: U+0000-007F;
+    src: url('/fonts/NotoSans-Bold.ttf');
+}
+
+/* Korean font - regular */
+@font-face {
+    font-family: 'KR_regular';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Regular.otf');
+}
+
+/* Korean font - bold */
+@font-face {
+    font-family: 'KR_bold';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'KR_lighter';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Light.otf');
+}
+
+/* Apply the font families to the respective language scripts */
+body {
+    font-family: 'ENG_regular', 'KR_regular', sans-serif;
+}
+
+/* 한글인데 bold,light적용시켜주려면 다음 클래스 적용 */
+.kbolder {
+    font-family: 'KR_bolder';
+}
+
+.klighter {
+    font-family: 'KR_lighter';
+}
+
+/* 영어인데 bold,light적용시켜주려면 다음 클래스 적용 */
+.Ebolder {
+    font-family: 'ENG_bolder';
+}
+
+.Elighter {
+    font-family: 'ENG_lighter';
+}
+
+
+h1 {
+    font-size: 20px;
+
+}
+
+.title {
+    font-size: 20px;
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+.category {
+    font-size: 14px;
+}
+
+.context1 {
+    font-size: 12px;
+}
+
+.context2 {
+    font-size: 10px;
+}
