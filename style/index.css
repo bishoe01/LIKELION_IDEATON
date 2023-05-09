@@ -39,8 +39,17 @@
 }
 
 /* Apply the font families to the respective language scripts */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
 body {
     font-family: 'ENG_regular', 'KR_regular', sans-serif;
+    width: 390px;
+    height: 844px;
+
 }
 
 /* 한글인데 bold,light적용시켜주려면 다음 클래스 적용 */
