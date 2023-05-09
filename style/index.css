@@ -1,3 +1,11 @@
+:root {
+    --primary: #19A7CE;
+    --primary_darky: #146C94;
+    --textgray: #908787;
+    --black: #000000;
+    --white: #ffffff;
+}
+
 /* English font - regular */
 @font-face {
     font-family: 'ENG_regular';
@@ -47,8 +55,11 @@
 
 body {
     font-family: 'ENG_regular', 'KR_regular', sans-serif;
-    width: 390px;
-    height: 844px;
+    width: 393px;
+    height: 852px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
 
 }
 
@@ -94,4 +105,37 @@ h1 {
 
 .context2 {
     font-size: 10px;
+}
+
+
+/* mainBanner */
+
+.main_banner {
+    width: 100%;
+    height: 379px;
+    background-image: url('../imgs/main_banner.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    position: relative;
+    padding: 29px 29px 0px 29px;
+    /* 80% */
+}
+
+.title_section {
+    display: flex;
+    width: 204px;
+    height: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-solid {
+    font-size: 18px;
+}
+
+.logo {
+    text-align: center;
+    color: var(--primary_darky);
+    font-size: 18px;
+    font-family: 'ENG_bold';
 }
