@@ -35,7 +35,6 @@ ul {
 
 @font-face {
     font-family: 'ENG_lighter';
-    unicode-range: U+0000-007F;
     src: url('/fonts/NotoSans-Light.ttf');
 }
 
@@ -90,7 +89,7 @@ body {
 
 /* 한글인데 bold,light적용시켜주려면 다음 클래스 적용 */
 .kbolder {
-    font-family: 'KR_bolder';
+    font-family: 'KR_bold';
 }
 
 .klighter {
@@ -243,8 +242,9 @@ h1 {
     border-radius: 99px;
     font-size: 12px;
     font-family: 'KR_bold';
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--primary);
+    background-color: var(--white);
+    opacity: 0.85;
     border: none;
 
 }
@@ -362,6 +362,7 @@ h1 {
     width: 90px;
     height: 90px;
     border-radius: 10px;
+    filter: drop-shadow(4px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .record {
