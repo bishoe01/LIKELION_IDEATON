@@ -83,8 +83,6 @@ ul {
 
 body {
     font-family: 'ENG_regular', 'KR_regular', sans-serif;
-    width: 393px;
-    height: 852px;
 }
 
 /* 한글인데 bold,light적용시켜주려면 다음 클래스 적용 */
@@ -446,6 +444,7 @@ h1 {
 
 .card__section {
     display: flex;
+    padding-bottom: 12px;
     gap: 15px;
     overflow: scroll;
 }
