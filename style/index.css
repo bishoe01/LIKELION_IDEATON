@@ -39,6 +39,7 @@
     src: url('/fonts/NotoSansKR-Bold.otf');
 }
 
+
 @font-face {
     font-family: 'KR_lighter';
     unicode-range: U+AC00-D7AF;
@@ -50,6 +51,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box
+}
+
+:root {
+    width: 393px;
+    height: 852px;
 }
 
 body {
