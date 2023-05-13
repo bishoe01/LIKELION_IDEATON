@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page1</title>
-    <script src="https://kit.fontawesome.com/4b1b744422.js" crossorigin="anonymous"></script>
+
+    <title>LikeLion IDEATON</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="page1.css" type="text/css">
+    <link rel="stylesheet" href="page1.css">
 </head>
 
 <body>
-    <!-- 인포끝 -->
-
     <div class="main_banner">
         <div class="title__section">
             <i class="fa-solid fa-bars"></i>
@@ -21,7 +17,7 @@
         <!-- Image__section -->
         <div class="image__section">
             <img class="rectangle" src="/imgs/Rectangle.png" alt="">
-            <img class="profile__image" src="/imgs/profile.png" alt="">
+            <img class="profile__image" src="/imgs/main_profile.png" alt="">
             <div>
                 <h1 class="title kbolder">박무당벌레님</h1>
                 <span class="subtitle kbolder">추억보관소</span>
@@ -68,62 +64,142 @@
     <!-- NAVIGATION -->
     <div class="tab">
         <li class="now">일대기</li>
-        <li >개인정보</li>
-        <li>앨범</li>
-        <li>방명록</li>
+        <li><a href="index.html">개인정보</a></li>
+        <li><a href="album.html">앨범</a></li>
+        <li><a href="guestbook.html"> 방명록</a></li>
     </div>
-<!-- /*인포끝*/ -->
+
+    <!-- /*인포끝*/ -->
 
     <!-- /*일대기 시작*/ -->
     <section class="biography-section">
-        <div class="biography-title">
-            <h3 class="subtitle">일대기</h3>
-            <h1 class="title">그녀의 발자취를 따라 가볼까요?</h1>
-        </div>
+        <h1 class="biography__title">발자취 따라가기</h1>
+    </section>
 
-        <div class="biography-content">
-        <div class="section-content container">
-
-
-            <div class="biography-img biography-img01">
-                <div class="image-title image-title01">
-                    <p class="img-title__num title kbolder">01</p>
-                    <p class="img-title__year subtitle">1975년</p>
+    <div class="scroll__section">
+        <div id="01" class="container">
+            <img class="bio__img" src="page1_source/baby.jpg" alt="">
+            <div class="image-title image-title01">
+                <h4 class="img-title__num title kbolder">01</h4>
+                <span class="img-title__year subtitle">1975년</span>
+            </div>
+            <div class="biography__description">
+                <div class="biography-content__title">
+                    <h1 style="font-size: 18px;" class="kbolder">1세</h1>
+                    <div></div>
+                    <h4 style="font-size: 16px;" class="kbolder">01</h4>
                 </div>
+                <p class="content__description">
+                    <span class="birth kbolder"><span class="Ebolder">1985.01.24</span> 출생</span>
+                    <span style="font-size: 14px;" class="">딸기 병원에서 태어남</span>
+                </p>
             </div>
-            <div class="img-content">
-                    <div class="biography-content01">
-                        <div class="biography-content__container">
-                            <div class="biography-content__title">
-
-                                <h1 class="title kbolder">1세</h1>
-                                <div></div>
-                                <h4>01</h4>
-                            </div>
-
-                            <p class="context1 kbolder">1955년 23월 34일 출생</p>
-                            <p class="context1">딸기 병원에서 태어남</p>
-                        </div>
-                    </div>          
-            </div>
-            <div class="navigation-bar">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-            </div>
-
         </div>
-            
-
-        <div class="section-content container">
-            <div class="biography-img biography-img02">
-                <div class="image-title image-title02">
-                    <p class="img-title__num title">02</p>
-                    <p class="img-title__year subtitle">1980년</p>
-                </div>
+        <div id="02" class="container">
+            <img class="bio__img" src="imgs/hockey__profile.png" alt="">
+            <div class="image-title image-title01">
+                <h4 class="img-title__num title kbolder">02</h4>
+                <span class="img-title__year subtitle">2001년</span>
             </div>
-            <div class="img-content">
+            <div class="biography__description">
+                <div class="biography-content__title">
+                    <h1 style="font-size: 18px;" class="kbolder">15세</h1>
+                    <div></div>
+                    <h4 style="font-size: 16px;" class="kbolder">02</h4>
+                </div>
+                <p class="content__description">
+                    <span class="Ebolder">2001.01.20</span>
+                    <span style="font-size: 14px;" class="">사자고 하키부 활동</span>
+                </p>
+            </div>
+        </div>
+        <div id="02" class="container">
+            <img class="bio__img" src="page1_source/hockey_TEAM.webp" alt="">
+            <div class="image-title image-title01">
+                <h4 class="img-title__num title kbolder">03</h4>
+                <span class="img-title__year subtitle">2004년</span>
+            </div>
+            <div class="biography__description">
+                <div class="biography-content__title">
+                    <h1 style="font-size: 18px;" class="kbolder">19세</h1>
+                    <div></div>
+                    <h4 style="font-size: 16px;" class="kbolder">03</h4>
+                </div>
+                <p class="content__description">
+                    <span class="Ebolder">2004.03.01</span>
+                    <span style="font-size: 14px;" class="">A대학 하키팀 합류</span>
+                </p>
+            </div>
+        </div>
+        <div id="02" class="container">
+            <img class="bio__img" src="page1_source/hockey__mvp.png" alt="">
+            <div class="image-title image-title01">
+                <h4 class="img-title__num title kbolder">04</h4>
+                <span class="img-title__year subtitle">2007년</span>
+            </div>
+            <div class="biography__description">
+                <div class="biography-content__title">
+                    <h1 style="font-size: 18px;" class="kbolder">22세</h1>
+                    <div></div>
+                    <h4 style="font-size: 16px;" class="kbolder">04</h4>
+                </div>
+                <p class="content__description">
+                    <span class="Ebolder">2004.03.01</span>
+                    <span style="font-size: 14px;" class="">A_TEAM 07시즌 우승 / FINAL MVP </span>
+                </p>
+            </div>
+        </div>
+        <div id="03" class="container">
+            <img class="bio__img" src="page1_source/wedding.jpg" alt="">
+            <div class="image-title image-title01">
+                <h4 class="img-title__num title kbolder">05</h4>
+                <span class="img-title__year subtitle">2011년</span>
+            </div>
+            <div class="biography__description">
+                <div class="biography-content__title">
+                    <h1 style="font-size: 18px;" class="kbolder">26세</h1>
+                    <div></div>
+                    <h4 style="font-size: 16px;" class="kbolder">05</h4>
+                </div>
+                <p class="content__description">
+                    <span class="Ebolder">2011.08.24</span>
+                    <span style="font-size: 14px;" class="">박호랑과 혼인</span>
+                </p>
+            </div>
+        </div>
+        <div id="03" class="container">
+            <img class="bio__img" src="page1_source/hockey__retire.webp" alt="">
+            <div class="image-title image-title01">
+                <h4 class="img-title__num title kbolder">06</h4>
+                <span class="img-title__year subtitle">2015년</span>
+            </div>
+            <div class="biography__description">
+                <div class="biography-content__title">
+                    <h1 style="font-size: 18px;" class="kbolder">30세</h1>
+                    <div></div>
+                    <h4 style="font-size: 16px;" class="kbolder">06</h4>
+                </div>
+                <p class="content__description">
+                    <span class="Ebolder">2015.2.24</span>
+                    <span style="font-size: 14px;" class="">15시즌 폐막 / 은퇴식</span>
+                </p>
+            </div>
+        </div>
+        <div class="control__bar">
+            <a href="#01"><i class="fa-solid fa-caret-up"></i></a>
+            <a href="#02"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+    </div>
+
+
+    <!-- <div class="section-content container">
+                <div class="biography-img biography-img02">
+                    <div class="image-title image-title02">
+                        <p class="img-title__num title">02</p>
+                        <p class="img-title__year subtitle">1980년</p>
+                    </div>
+                </div>
+                <div class="img-content">
                     <div class="biography-content02">
                         <div class="biography-content__container">
                             <div class="biography-content__title">
@@ -135,25 +211,19 @@
                             <p class="context1">천사 고등학교 입학<br>
                                 천사 고등학교 졸업</p>
                         </div>
-                    </div>       
-            </div>
-            <div class="navigation-bar">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </div>
-        
-        <div class="section-content"> 
-            <div class="biography-img biography-img03">
-                <div class="image-title image-title03">
-                <p class="img-title__num title">03</p>
-                <p class="img-title__year subtitle">2000년</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="img-content">
+            <div class="section-content">
+                <div class="biography-img biography-img03">
+                    <div class="image-title image-title03">
+                        <p class="img-title__num title">03</p>
+                        <p class="img-title__year subtitle">2000년</p>
+                    </div>
+                </div>
+
+                <div class="img-content">
                     <div class="biography-content03">
                         <div class="biography-content__container">
                             <div class="biography-content__title">
@@ -164,24 +234,19 @@
                             <p class="context1">1955년 23월 34일 출생</p>
                             <p class="context1">망고 회사 취업</p>
                         </div>
-                    </div>       
-            </div>
-            <div class="navigation-bar">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </div>
-
-        <div class="section-content">    
-            <div class="biography-img biography-img04">
-                <div class="image-title image-title04">
-                    <p class="img-title__num title">04</p>
-                    <p class="img-title__year subtitle">2010년</p>
+                    </div>
                 </div>
+
             </div>
-            <div class="img-content">
+
+            <div class="section-content">
+                <div class="biography-img biography-img04">
+                    <div class="image-title image-title04">
+                        <p class="img-title__num title">04</p>
+                        <p class="img-title__year subtitle">2010년</p>
+                    </div>
+                </div>
+                <div class="img-content">
                     <div class="biography-content04">
                         <div class="biography-content__container">
                             <div class="biography-content__title">
@@ -192,21 +257,12 @@
                             <p class="context1 kbolder">1955년 23월</p>
                             <p class="context1">00 00일에서 00하다</p>
                         </div>
-                    </div>       
-            </div>
-            <div class="navigation-bar">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </div>
-       
-    
-    </div>
-        
+                    </div>
+                </div>
 
-    </section>
+            </div> -->
 
+    <script src="https://kit.fontawesome.com/4b1b744422.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
