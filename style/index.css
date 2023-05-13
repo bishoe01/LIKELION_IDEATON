@@ -36,6 +36,7 @@
 /* Korean font - bold */
 @font-face {
     font-family: 'KR_bold';
+    unicode-range: U+AC00-D7AF;
     src: url('/fonts/NotoSansKR-Bold.otf');
 }
 
@@ -102,7 +103,6 @@ h1 {
 
 .category {
     font-size: 14px;
-    background-color: var(--white);
 }
 
 .context1 {
@@ -111,55 +111,4 @@ h1 {
 
 .context2 {
     font-size: 10px;
-}
-
-.category__btn {
-    font-size:  14px;
-    font-family: 'KR_bold';
-    src: url('/fonts/NotoSansKR-Bold.otf');
-    color: #19A7CE;
-    background-color: var(--white); 
-}
-
-/* .category__btn {
-    font-size:  14px;
-    font-family: 'KR_regular';
-    unicode-range: U+AC00-D7AF;
-    src: url('/fonts/NotoSansKR-Regular.otf');
-    color:#000000;
-    background-color: var(--white); 
-}
-
-.category__btn :active{
-    font-size:  14px;
-    font-family: 'KR_bold';
-    unicode-range: U+AC00-D7AF;
-    src: url('/fonts/NotoSansKR-Bold.otf');
-    color:#19A7CE;
-    background-color: var(--white); 
-}
-
-.category__btn :visited{
-    font-size:  14px;
-    font-family: 'KR_bold';
-    unicode-range: U+AC00-D7AF;
-    src: url('/fonts/NotoSansKR-Bold.otf');
-    color:#19A7CE;
-    background-color: var(--white); 
-
-} */
-
-.context3 {
-    margin-left: 5px;
-}
-
-.context1_bold {
-    font-family : 'KR_bold';
-    src: url('/fonts/NotoSansKR-Bold.otf');
-    font-size: 12px;
-    color: #146C94;
-}
-
-.grey{
-    color: #908787;
 }

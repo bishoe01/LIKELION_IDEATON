@@ -5,59 +5,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet",  href="guestbook.css">
-    <title>LIKELION_guestbook</title> <!-- 웹 제목 -->
+
+    <title>LikeLion IDEATON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="guestbook.css">
 </head>
 
-<body id="background"> <!-- 배경색, 사진 -->
-
-    <!-- 1단계 : 맨 상단 브랜드명  -->
-    <div id="inmind">inmind</p>
-    </div>
-
-    <!-- 2단계 : 왼쪽 상단 햄버거바 -->
-    <div id="Vector">
-    </div>
-    <!-- 2단계 끝 -->
-
-    <!-- 3단계 : 왼쪽 상단 인물사진 -->
-    <div>
-        <img src="프로필.png" class="profile">
-    </div>  
-
-    <!-- 4단계 : ~님의 추억 ~  -->
-    <div id="박무당벌레">
-        박무당벌레님의<br>
-        추억저장소</p>
-    </div>
-
-    <!-- 4단계 : 헌화, 선물 버튼 만들기 -->
-    <button class='헌화'>헌화하기</button>
-	<button class='선물'>선물하기</button>
-
-
-    <!-- 5단계 : 중간 3단 블록 만들기 -->
-    <div id="Container">
-        <div class="leftarticle">
-            <p class="context2">방명록</p>
-            <p class="context3">36</p>
-            <p class="context1">분이 남기셨어요</p>
+<body>
+    <div class="main_banner">
+        <div class="title__section">
+            <i class="fa-solid fa-bars"></i>
+            <h2 class="logo">IN MIND</h2>
         </div>
-        <div id="centerArticle" class="article">
-            <p class="context2">백합</p>
-            <p class="context3">89</p>
-            <p class="context1">송이</p>
-            </p>
-        </div>
-        <div class="rightarticle">
-            <p class="context2">최근 다녀간 날</p>
-            <p class="context3">2034.06.53</p>
-            <p class="context1">+43일이 지났어요</p>
-            </p>
-        </div>
-    </div>
-    <!-- 3단계 : 블록 만들기 -->
+        <!-- Image__section -->
+        <div class="image__section">
+            <img class="rectangle" src="/imgs/Rectangle.png" alt="">
+            <img class="profile__image" src="/imgs/profile.png" alt="">
+            <div>
+                <h1 class="title kbolder">박무당벌레님</h1>
+                <span class="subtitle kbolder">추억보관소</span>
+                <div class="day__section">
+                    <span class="day__check">당신이 떠난 뒤</span>
+                    <div class="day__title">
+                        <h5 class="day__detail">365</h5>
+                        <div class="day__description">
+                            <span>일이<br>지났어요</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gift__section">
+                    <button class="gift__button">
+                        <span>선물하기</span>
+                    </button>
+                    <button class="gift__button">
+                        <span>헌화하기</span>
+                    </button>
 
+                </div>
+            </div>
+            <div class="box__section">
+                <div class="day__box">
+                    <span class="box__title">방명록</span>
+                    <h4 class="box__content title kbolder">36</h4>
+                    <span class="box__description">분이 남기셨어요</span>
+                </div>
+                <div class="day__box">
+                    <span class="box__title">백합</span>
+                    <h4 class="box__content title kbolder">89</h4>
+                    <span class="box__description">송이</span>
+                </div>
+                <div class="day__box">
+                    <span class="box__title">최근 다녀간 날</span>
+                    <h4 class="box__content title kbolder">23.04.10</h4>
+                    <span class="box__description">+31일이 지났어요</span>
+                </div>
+                <!-- Category__section -->
+            </div>
+            <div class="box__category">
+                <p class="category">일대기</p>
+                <p class="category">개인정보</p>
+                <p class="category">앨범</p>
+                <p class="category__btn">방명록</p>
+            </div>
+            <div class="box__guest">
+                <!-- <span class="circle" >
+                    <img class="guest__profile"src=/imgs/guest1crop.jpg alt="">
+                </span> -->
+                <div class="guest__intro">
+                    <img class="guest__profile" src=/imgs/guest1crop.png alt="">
+                    <div class="guest__info col">
+                        <span class="context1 context3">⭐님</span>
+                        <span class="context1_bold ">가족</span>
+                        <img class="heart" src=/imgs/heart.png><br>
+                        <span class="context2 context3 grey">202X년 X월 X일</span>
+                        <span class="context2 grey good">좋아요</span>
+                    </div>
+                </div>
+
+                <div class="guest__text">
+                    <span class="context1">
+                        당신을 생각하면 봄이 떠오릅니다.<br>
+                        4월 초 아직 봄이 만개하기 전,</span><br>
+                    <span class="context1 grey">더보기</span>
+                    <div class="image__box">
+                        <img class="image__family" src=/imgs/가족1.jpg>
+                        <img class="image__family" src=/imgs/가족2.jpg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="box__guest2">
+                <!-- <div class="circle" >
+                    <img class="guest__profile"src=/imgs/guest2.jpg>
+                </div> -->
+                <div class="guest__intro">
+                    <img class="guest__profile" src=/imgs/guest2crop.png alt="">
+                    <div class="guest__info col">
+                        <span class="context1 context3">❤️님</span>
+                        <span class="context1_bold">친구</span>
+                        <img class="heart" src=/imgs/heart.png><br>
+                        <span class="context2 context3 grey">202X년 X월 X일</span>
+                        <span class="context2 grey good">좋아요</span><br>
+
+                    </div>
+                </div>
+
+                <div class="guest__text">
+                    <span class="context1">
+                        사랑하는 내 친구가 아름다운 자연 속에서 편안히 잠들기를 <br>
+                        바랍니다. 친구의 가족들과 지인들의 마음은 ... </span>
+                </div>
+            </div>
+            </span>
+        </div>
+        <script src="https://kit.fontawesome.com/4b1b744422.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

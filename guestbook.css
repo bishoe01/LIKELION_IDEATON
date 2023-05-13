@@ -1,105 +1,425 @@
-#Vector{
-/* Vector */
-    position: absolute;
-    left: 12.5%;
-    right: 12.5%;
-    top: 29.17%;
-    bottom: 29.17%;
-    border: 1.5px solid #000000;
+:root {
+    --primary: #19A7CE;
+    --primary_darky: #146C94;
+    --textgray: #908787;
+    --black: #000000;
+    --white: #ffffff;
 }
 
-#inmind{
-    /* IN MIND */
-    position: absolute;
-    width: 48px;
-    height: 17px;
-    left: 172px;
-    top: 28px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
+/* English font - regular */
+@font-face {
+    font-family: 'ENG_regular';
+    unicode-range: U+0000-007F;
+    src: url('/fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ENG_lighter';
+    unicode-range: U+0000-007F;
+    src: url('/fonts/NotoSans-Light.ttf');
+}
+
+/* English font - bold */
+@font-face {
+    font-family: 'ENG_bold';
+    unicode-range: U+0000-007F;
+    src: url('/fonts/NotoSans-Bold.ttf');
+}
+
+/* Korean font - regular */
+@font-face {
+    font-family: 'KR_regular';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'KR_thin';
+    unicode-range: U+0000-007F;
+    src: url('/fonts/NotoSansKR-Thin.otf');
+}
+
+/* Korean font - bold */
+@font-face {
+    font-family: 'KR_bold';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'KR_lighter';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Light.otf');
+}
+
+/* Apply the font families to the respective language scripts */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    width: 393px;
+    height: 852px;
+}
+
+body {
+    font-family: 'ENG_regular', 'KR_regular', sans-serif;
+    width: 393px;
+    height: 852px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 한글인데 bold,light적용시켜주려면 다음 클래스 적용 */
+.kbolder {
+    font-family: 'KR_bolder';
+}
+
+.klighter {
+    font-family: 'KR_lighter';
+}
+
+/* 영어인데 bold,light적용시켜주려면 다음 클래스 적용 */
+.Ebolder {
+    font-family: 'ENG_bolder';
+}
+
+.Elighter {
+    font-family: 'ENG_lighter';
+}
+
+
+h1 {
+    font-size: 20px;
+
+}
+
+.title {
+    font-size: 20px;
+}
+
+.subtitle {
     font-size: 12px;
-    line-height: 17px;
+}
 
-    color: #000000;
-    }
+.category {
+    font-size: 14px;
+}
 
-#박무당벌레{
-/* 박무당벌레님의 ~ */
-    position: absolute;
-    width: 78px;
-    height: 17px;
-    left: 204px;
-    top: 129px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
+.context1 {
     font-size: 12px;
-    line-height: 17px;
-
-    color: #000000;
 }
 
-#당신{
-
-/* 당신이 떠난 뒤 ~일이 지났어요 */
-    position: absolute;
-    width: 165px;
-    height: 84px;
-    left: 201px;
-    top: 179px;
-
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    }
-
-#헌화{
-/* */
-
-    position: absolute;
-    width: 66px;
-    height: 25px;
-    left: 208px;
-    top: 273px;
-
-    background: #000000;
-    border-radius: 15px;
+.context2 {
+    font-size: 10px;
 }
 
-#선물{
-        
-    position: absolute;
-    width: 66px;
-    height: 25px;
-    left: 290px;
-    top: 273px;
 
-    background: #000000;
-    border-radius: 15px;
+/* mainBanner */
+
+.main_banner {
+    width: 393px;
+    height: 379px;
+    position: relative;
+    padding: 29px 29px 0px 29px;
+    /* 80% */
 }
 
-#profile{
-
+.rectangle {
+    object-fit: cover;
     position: absolute;
-    width: 166px;
-    height: 166px;
-    left: 22px;
-    top: 122px;
+    top: 0;
+    left: 0;
+    width: 393px;
+    height: 379px;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+
+
+.title__section {
+    display: flex;
+    width: 204px;
+    height: 24px;
+    justify-content: flex-start;
+    gap: 110px;
+    align-items: center;
+}
+
+.fa-solid {
+    font-size: 18px;
+}
+
+.logo {
+    text-align: center;
+    color: var(--primary_darky);
+    font-size: 18px;
+    font-family: 'ENG_bold';
+}
+
+.image__section {
+    display: flex;
+    margin-top: 77px;
+    gap: 33px;
+}
+
+.profile__image {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
     border-radius: 24px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
-#background{
+.day__section {
+    width: 156px;
+    height: 76px;
+    background-color: var(--white);
+    opacity: 0.8;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    padding-right: 13px;
+    margin-top: 8px;
+}
 
+.day__check {
+    font-size: 12px;
+}
+
+.day__title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.day__detail {
+    font-family: 'KR_thin';
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--primary);
+}
+
+.day__description {
+    width: 45px;
+    height: 34px;
+    font-size: 12px;
+}
+
+.gift__section {
+    margin-top: 16px;
+    width: 156px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+
+.gift__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 26px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-family: 'KR_bold';
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+
+}
+
+
+
+.box__section {
     position: absolute;
-    width: 390px;
-    height: 368px;
-    left: 0px;
-    top: 9px;
+    bottom: -45px;
+    display: flex;
+    gap: 11px;
 
-    background: white;
-    background-blend-mode: multiply;
-    backdrop-filter: blur(2px);
+}
 
+.day__box {
+    width: 105px;
+    height: 105px;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.box__title {
+    font-size: 12px;
+    font-family: 'KR_bold';
+}
+
+.box__description {
+    font-size: 12px;
+}
+
+.box__category {
+    position: absolute;
+    bottom: -90px;
+    display: flex;
+    gap: 35px;
+}
+
+.hr2 {
+    border: 0;
+    background-color: #19A7CE;
+    width: 55px;
+    height: 2px;
+    position: absolute;
+    left: 233px;
+    top: 479px;
+}
+
+.box__guest {
+    width: 324px;
+    height: 245px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    position: absolute;
+    bottom: -360px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.box__guest2 {
+    position: absolute;
+    width: 323px;
+    height: 116px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    bottom: -500px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.guest__intro {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+}
+
+
+.guest__text {
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.guest__heart {
+    padding-top: 20px;
+}
+
+hr {
+    border: 0;
+    background-color: #19A7CE;
+    width: 286.86px;
+    height: 1px;
+    position: absolute;
+    left: 20px;
+}
+
+
+
+.heart {
+    height: 20px;
+    position: absolute;
+    left: 270px;
+}
+
+.good {
+    position: absolute;
+    left: 266px;
+}
+
+/* 
+.circle {
+    width: 51px;
+    height: 51px;
+} */
+
+
+.guest__profile {
+    width: 51px;
+    height: 51px;
+}
+
+.image__box {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    gap: 12px;
+}
+
+.image__family {
+    width: 137px;
+    height: 82px;
+}
+
+
+.category__btn {
+    font-size: 14px;
+    font-family: 'KR_bold';
+    src: url('/fonts/NotoSansKR-Bold.otf');
+    color: #19A7CE;
+    background-color: var(--white);
+}
+
+/* .category__btn {
+    font-size:  14px;
+    font-family: 'KR_regular';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Regular.otf');
+    color:#000000;
+    background-color: var(--white); 
+}
+
+.category__btn :active{
+    font-size:  14px;
+    font-family: 'KR_bold';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Bold.otf');
+    color:#19A7CE;
+    background-color: var(--white); 
+}
+
+.category__btn :visited{
+    font-size:  14px;
+    font-family: 'KR_bold';
+    unicode-range: U+AC00-D7AF;
+    src: url('/fonts/NotoSansKR-Bold.otf');
+    color:#19A7CE;
+    background-color: var(--white); 
+
+} */
+
+.context3 {
+    margin-left: 5px;
+}
+
+.context1_bold {
+    font-family: 'KR_bold';
+    src: url('/fonts/NotoSansKR-Bold.otf');
+    font-size: 12px;
+    color: #146C94;
+}
+
+.grey {
+    color: #908787;
 }
